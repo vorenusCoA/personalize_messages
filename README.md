@@ -13,13 +13,13 @@ Script para mandar mensajes directos personalizados a nuestros followers de twit
 - El mensaje a enviar se escribe como segundo parámetro del método create_direct_message() de la línea 37. Debe ser una String y, para ser personalizado a cada follower, contener #{key} en el lugar del nombre deseado.
 
 ## Uso
-
+```
 $ ruby personalize_messages.rb
-
+```
 ## Ejemplo
-
+```
 client.create_direct_message(value, "Feliz año nuevo #{key}!")
-
+```
 Cada follower recibirá un mensaje con su nombre al final.
 
 ## Aclaración
